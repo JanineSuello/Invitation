@@ -144,6 +144,100 @@ a{color:#d16c7c;text-decoration:none;font-weight:500;}
   }
 }
 
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+@media (max-width: 768px){
+
+  /* Prevent content from being cut off on mobile */
+  .section{
+    height: auto;
+    min-height: 100vh;
+    padding: 15px 10px;
+  }
+
+  .page-card{
+    width: 95vw;
+    height: auto;
+    min-height: 85vh;
+    border-radius: 20px;
+  }
+
+  /* Disable hover zoom (no hover on phones) */
+  .page-card:hover img,
+  .gallery img:hover{
+    transform: none;
+  }
+
+  /* Images scale better on phones */
+  .page-card img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Text scaling */
+  h1{
+    font-size: 1.6rem;
+  }
+
+  h2{
+    font-size: 1.4rem;
+  }
+
+  p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Baby name (hero text) */
+  .baby-name{
+    font-size: 2.8rem;
+  }
+
+  /* Countdown layout */
+  .timer{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .timer div{
+    min-width: 60px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Calendar resize */
+  .calendar{
+    width: 160px;
+    height: 160px;
+    font-size: 1.2rem;
+  }
+
+  /* Color palette circles */
+  .color{
+    width: 55px;
+    height: 55px;
+  }
+
+  /* Gallery spacing */
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* Overlay readability */
+  .overlay{
+    padding: 15px;
+    background: rgba(255,255,255,0.7);
+  }
+
+  /* Final page text */
+  .bold-text{
+    font-size: 1.4rem;
+  }
+}
+
+
 </style>
 </head>
 <body>
